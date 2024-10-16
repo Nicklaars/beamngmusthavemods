@@ -1,0 +1,105 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    margin: 0;
+    padding: 0;
+    color: #f0f0f0;
+}
+
+/* Container Styling */
+.container {
+    text-align: center;
+    padding: 60px; /* Increased padding for more space */
+    background-color: #2e2e2e;
+    border-radius: 12px;
+    width: 95%; /* Increased width for a larger container */
+    max-width: 800px; /* Increased max-width for larger displays */
+    margin: 60px auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Title Styling */
+h1 {
+    color: #f08700; /* BeamNG Orange */
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Description Paragraph */
+p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Downloads Section Styling */
+.downloads {
+    margin-top: 20px;
+}
+
+/* Individual Download Item Styling */
+.download-item {
+    margin: 25px 0;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Align items vertically centered */
+    justify-content: space-between; /* Distribute space between children */
+    padding: 10px; /* Add padding to create space around the item */
+    background-color: #3c3c3c; /* Optional: Add a background color to each item */
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+/* Mod Description Styling */
+.download-item h2 {
+    flex: 1; /* Allow the heading to take up available space */
+    text-align: left; /* Align text to the left */
+    margin: 0; /* Remove default margin */
+}
+
+/* Styling for car images */
+.car-image {
+    width: 150px; /* Increased width for larger images */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 15px; /* Space between image and text */
+}
+
+/* Button Styling */
+button {
+    background-color: #f08700; /* BeamNG Orange */
+    color: white;
+    border: none;
+    padding: 12px 25px; /* Consistent padding */
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+    flex-shrink: 0; /* Prevents button from shrinking */
+}
+
+/* Hover and Active Button States */
+button:hover {
+    background-color: #d97500;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 600px) {
+    .container {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
